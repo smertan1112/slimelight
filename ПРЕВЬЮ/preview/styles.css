@@ -862,3 +862,24 @@ svg { display: block; }
 .tr-card.picked { transform: scale(1.08); filter: brightness(1.5) drop-shadow(0 0 22px var(--cc)); z-index: 2; }
 .tr-card.gone { opacity: 0; transform: translateY(30px) scale(.9); }
 .tr-modal.out { animation: fadeOut .4s .12s both; }
+/* --- пиксельный стиль забега --- */
+.tr-cv { image-rendering: pixelated; }
+.tr-run .tr-plaque b, .tr-run .tr-timeline span, .tr-run .tr-lvl b, .tr-run .tr-hp span, .tr-run .tr-ech-pill, .tr-banner-pop b, .tr-m-title, .tr-card b { font-family: 'Pixelify Sans', var(--f-display); letter-spacing: .02em; }
+.tr-rooms { display: flex; gap: 4px; }
+.tr-rooms i { width: 10px; height: 10px; border-radius: 2px; background: rgba(0,0,0,.55); box-shadow: inset 0 0 0 1px rgba(200,170,255,.45); }
+.tr-rooms i.done { background: #b89aff; }
+.tr-rooms i.cur { background: #ffd27a; box-shadow: 0 0 8px rgba(255,210,122,.8); }
+.tr-rooms i.last { width: 13px; background-image: radial-gradient(circle, #ff6fb0 35%, transparent 40%); }
+/* редкость карточек */
+.tr-card .tr-card-top { color: var(--rc); text-shadow: 0 0 8px color-mix(in srgb, var(--rc) 60%, transparent); }
+.tr-card.r-common { border-color: #6a7080; }
+.tr-card.r-rare { border-color: #4fa8ff; background: linear-gradient(180deg, #1f3458, #16243e 60%, #121c30); }
+.tr-card.r-epic { border-color: #b45cff; background: linear-gradient(180deg, #3a1f5a, #2a1544 60%, #1e1032); box-shadow: 0 0 24px -6px rgba(180,92,255,.7), 0 16px 30px -12px #000; }
+.tr-card.r-legendary { border-color: #ffb52e; background: linear-gradient(180deg, #5a3a10, #3a240a 60%, #2a1a06); box-shadow: 0 0 30px -4px rgba(255,181,46,.8), 0 16px 30px -12px #000; }
+.tr-card.r-legendary::after { box-shadow: inset 0 0 0 2px #ffb52e, inset 0 0 30px -6px #ffb52e; }
+.tr-card.r-rare .tr-card-tag { color: #08203f; background: linear-gradient(180deg, #e0f2ff, #6fb0ff); }
+.tr-card.r-epic .tr-card-tag { color: #1e0a33; background: linear-gradient(180deg, #f0d8ff, #b45cff); }
+.tr-card.r-legendary .tr-card-tag { color: #3a2408; background: linear-gradient(180deg, #fff3c0, #ffb52e); }
+.tr-card.r-common .tr-card-tag { color: #20242c; background: linear-gradient(180deg, #f2f4f8, #b8c0cc); }
+.tr-hero-art img { image-rendering: pixelated; }
+.feat-heroes img { image-rendering: pixelated; }
